@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Tiger Timer</title>
+    <link rel="icon" href="./Assets/icon.png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="input_div">
+        <input
+          type="number"
+          name="minutes"
+          id="minutes"
+          placeholder="Enter minutes value"
+        />
+
+        <input
+          type="number"
+          name="seconds"
+          id="seconds"
+          placeholder="Enter Seconds value"
+        />
+      </div>
+
+      <div class="button_div">
+        <button id="start_btn" onclick="onaudio()">Start</button>
+        <button id="stop_btn" onclick="offaudio()">Stop</button>
+      </div>
+      <div class="result_div">
+        <h1 id="Displasy">00:00</h1>
+        <p id="result"></p>
+      </div>
+
+      <audio src="./Assets/Start.wav" id="start_audio"></audio>
+      <audio src="./Assets/Stop.wav" id="stop_audio"></audio>
+    </div>
+    <!-- script -->
+    <script src="./script.js"></script>
+  </body>
+</html>

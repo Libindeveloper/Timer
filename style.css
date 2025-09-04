@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(9, 11, 88);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 300px;
+  width: 400px;
+  border: 2px solid red;
+  backdrop-filter: blur(9px);
+  padding: 5px;
+  border-radius: 20px;
+  background-color: rgb(228, 224, 224);
+  display: flex;
+  flex-direction: column;
+}
+.input_div {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.input_div input {
+  width: 94%;
+  height: 35px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  padding: 0 10px;
+  font-size: 22px;
+  border: none;
+  outline: none;
+}
+input::placeholder {
+  color: rgb(116, 116, 116);
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.button_div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  width: 100%;
+}
+.button_div button {
+  height: 80px;
+  width: 80px;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  transition: 0.5s;
+}
+.button_div button:nth-child(1) {
+  background-color: green;
+}
+.button_div button:nth-child(1):hover {
+  background-color: white;
+  color: green;
+}
+.button_div button:nth-child(2) {
+  background-color: red;
+}
+.button_div button:nth-child(2):hover {
+  background-color: white;
+  color: red;
+}
+.result_div {
+  width: 94%;
+  height: 60px;
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.result_div h1 {
+  font-size: 40px;
+  color: blueviolet;
+  margin-bottom: 7px;
+}
+.result_div p {
+  color: red;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 5px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
